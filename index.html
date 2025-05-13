@@ -8,117 +8,113 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header & Navbar -->
+
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">Edna Moraa</div>
-      <ul class="nav-links" id="navLinks">
+      <ul class="nav-links">
         <li><a href="#intro">Intro</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
     </nav>
   </header>
 
-  <!-- Intro -->
+  <!-- Intro Section -->
   <section class="intro-section" id="intro">
     <div class="intro-content">
       <img src="assets/img/edna-profile.png" alt="Edna Maburi" class="profile-img" />
       <div class="intro-text">
         <h1>Edna Moraa Maburi</h1>
-        <h2>IoT & Data Analytics Enthusiast<br />Cloud & Automation Expert | Python Developer</h2>
+        <h2>IoT & Data Analytics Enthusiast</h2>
         <p>
-          I build innovative cloud-based solutions, automate data workflows, and unlock actionable insights using modern tech stacks. Skilled in AWS, Python, and IoT analytics to drive impactful, data-driven decisions.
+          Cloud & Automation Expert | Python Developer<br>
+          I build innovative cloud-based solutions, automate workflows, and extract actionable insights using AWS, Python, and IoT analytics.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Main content -->
-  <main class="container">
-    
-    <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I specialize in smart metering, IoT analytics, and scalable cloud solutions. With hands-on experience in AWS and Python, I develop workflows that power real-time analytics and automation.
+    </p>
+    <p>
+      I’m open to roles in IoT engineering, data analysis, or cloud development where I can create measurable impact through innovation.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>✔ Python, JavaScript, Java, SQL, Bash</span>
+      <span>✔ AWS (IoT Core, Lambda, S3, Athena, QuickSight, EC2), Google Cloud, Docker, Kubernetes</span>
+      <span>✔ Data Analysis: Excel, Power BI, Tableau, Jupyter, Pandas, NumPy, Matplotlib, Seaborn</span>
+      <span>✔ Machine Learning: Scikit-learn, TensorFlow, PyTorch, Feature Engineering</span>
+      <span>✔ Automation & CI/CD: Jenkins, Git, GitHub, GitLab, Ansible, Selenium</span>
+      <span>✔ Database Management: MySQL, PostgreSQL, MongoDB, Redshift, Elasticsearch</span>
+      <span>✔ Networking & Security: MQTT, RESTful APIs, IoT Security, Encryption</span>
+      <span>✔ Project Management: Scrum, Jira, Trello, Asana, Kanban</span>
+      <span>✔ Soft Skills: Problem-Solving, Critical Thinking, Communication, Teamwork</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>IoT Job Execution Monitoring</h3>
       <p>
-        I specialize in smart metering, IoT analytics, and scalable cloud solutions. With hands-on experience in AWS and Python, I develop workflows that power real-time analytics and automation.
+        Automated tracking of job executions for 500,000+ IoT devices using <strong>AWS IoT Core</strong> and Python <strong>Boto3</strong>. Resolved API throttling and exported results to CSV/JSON for live and offline analysis.
       </p>
+      <p><strong>Tools:</strong> CloudWatch, Excel, Power BI, Pandas</p>
+    </div>
+
+    <div class="project">
+      <h3>IoT Analytics Dashboards – Simulated Device Monitoring</h3>
       <p>
-        I’m open to roles in IoT engineering, data analysis, or cloud development where I can create measurable impact through innovation.
+        Built a real-time dashboard for smart meter data using <strong>AWS Lambda</strong>, <strong>S3</strong>, <strong>Athena</strong>, and <strong>QuickSight</strong> for anomaly detection and diagnostics.
       </p>
-    </section>
+      <p><strong>Tools:</strong> Serverless, JSON, SQL, Visualization</p>
+    </div>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Python, JavaScript, Java, SQL, Bash</span>
-        <span>AWS (IoT Core, Lambda, S3, Athena, QuickSight, EC2)</span>
-        <span>Excel, Power BI, Tableau, Jupyter, Pandas, NumPy</span>
-        <span>Scikit-learn, TensorFlow, PyTorch</span>
-        <span>Jenkins, Git, GitHub, GitLab, Ansible, Selenium</span>
-        <span>MySQL, PostgreSQL, MongoDB, Redshift</span>
-        <span>MQTT, REST APIs, IoT Security, Encryption</span>
-        <span>Scrum, Jira, Trello, Asana</span>
-      </div>
-    </section>
+    <div class="project">
+      <h3>Smart Device Firmware Testing Automation</h3>
+      <p>
+        Created test automation scripts for firmware QA, simulating real-world usage and boosting testing efficiency by 70%.
+      </p>
+      <p><strong>Tools:</strong> Python, Git, Automated Logs</p>
+    </div>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <div class="project">
+      <h3>Professional Data Portfolio Website</h3>
+      <p>
+        Developed and deployed this responsive portfolio using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Jekyll</strong> on <strong>GitHub Pages</strong>.
+      </p>
+      <p><strong>Tools:</strong> Static Site, GitHub Pages, UI Design</p>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>IoT Job Execution Monitoring</h3>
-        <p>
-          Automated tracking of job executions for 500,000+ IoT devices using <strong>AWS IoT Core</strong> and Python <strong>Boto3</strong>. Resolved API throttling and exported results to CSV/JSON for live and offline analysis.
-        </p>
-        <p><strong>Tools:</strong> CloudWatch, Excel, Power BI, pandas</p>
-      </div>
-
-      <div class="project">
-        <h3>IoT Analytics Dashboards – Simulated Device Monitoring</h3>
-        <p>
-          Built a real-time dashboard for smart meter data using <strong>AWS Lambda</strong>, <strong>S3</strong>, <strong>Athena</strong>, and <strong>QuickSight</strong> for anomaly detection and diagnostics.
-        </p>
-        <p><strong>Tools:</strong> Serverless, JSON, SQL, Visualization</p>
-      </div>
-
-      <div class="project">
-        <h3>Smart Device Firmware Testing Automation</h3>
-        <p>
-          Created test automation scripts for firmware QA, simulating real-world usage and boosting testing efficiency by 70%.
-        </p>
-        <p><strong>Tools:</strong> Python, Git, Automated Logs</p>
-      </div>
-
-      <div class="project">
-        <h3>Professional Data Portfolio Website</h3>
-        <p>
-          Developed and deployed this responsive portfolio using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Jekyll</strong> on <strong>GitHub Pages</strong>.
-        </p>
-        <p><strong>Tools:</strong> Static Site, GitHub Pages, UI Design</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p><strong>Email:</strong> ednamaburi65@gmail.com</p>
-      <p><strong>Phone:</strong> +254 712 838 083</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ednamaburi65" target="_blank">linkedin.com/in/ednamaburi65</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Edna-Moraa" target="_blank">github.com/Edna-Moraa</a></p>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> <a href="mailto:ednamaburi65@gmail.com">ednamaburi65@gmail.com</a></p>
+    <p><strong>Phone:</strong> +254 712 838 083</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ednamaburi65" target="_blank">linkedin.com/in/ednamaburi65</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Edna-Moraa" target="_blank">github.com/Edna-Moraa</a></p>
+  </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Edna Maburi. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/theme-toggle.js"></script>
 </body>
 </html>
