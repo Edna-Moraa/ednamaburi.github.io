@@ -235,6 +235,10 @@ footer p {
   .intro-section {
     padding: 30px 15px;
   }
+  .mobile-nav {
+    display: none;
+  }
+}
 
   .intro-content {
     flex-direction: column;
