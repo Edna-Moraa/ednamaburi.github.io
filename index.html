@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,19 +8,29 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Edna Moraa</div>
-      <ul class="nav-links">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav>
+      <div class="logo">
+        <a href="#intro">Edna Moraa Maburi</a>
+      </div>
+      <div class="nav-links">
+        <a href="#intro">Intro</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="mobile-nav">
+        <a href="#intro">Intro</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
@@ -66,48 +77,47 @@
   </section>
 
   <!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
 
-  <div class="project">
-    <h3>IoT Job Execution Monitoring</h3>
-    <p>
-      Automated the monitoring of job executions for over 500,000 IoT devices during Over-The-Air (OTA) firmware deployments. Accessed <strong>AWS IoT Core</strong> locally via Python scripts using <strong>Boto3</strong> to retrieve and download execution statuses. Managed API throttling with exponential backoff and exported data to structured formats (CSV/JSON) for offline analysis.
-    </p>
-    <p>
-      Used <strong> Microsoft Excel</strong>, <strong>Power BI</strong>, and <strong>pandas</strong> in Python to track update outcomes, identify failed executions, and generate status reports. Integrated with <strong>AWS CloudWatch</strong> to monitor real-time device logs, conduct live diagnosis, and perform root cause analysis of update issues.
-    </p>
-    <p><strong>Skills:</strong> AWS IoT Core, AWS CloudWatch, Python, Boto3, OTA Firmware Updates, Excel, Power BI, pandas, Throttling Control, CSV/JSON Parsing, Device Management, Real-Time Diagnosis</p>
-  </div>
+    <div class="project">
+      <h3>IoT Job Execution Monitoring</h3>
+      <p>
+        Automated the monitoring of job executions for over 500,000 IoT devices during Over-The-Air (OTA) firmware deployments. Accessed <strong>AWS IoT Core</strong> locally via Python scripts using <strong>Boto3</strong> to retrieve and download execution statuses. Managed API throttling with exponential backoff and exported data to structured formats (CSV/JSON) for offline analysis.
+      </p>
+      <p>
+        Used <strong> Microsoft Excel</strong>, <strong>Power BI</strong>, and <strong>pandas</strong> in Python to track update outcomes, identify failed executions, and generate status reports. Integrated with <strong>AWS CloudWatch</strong> to monitor real-time device logs, conduct live diagnosis, and perform root cause analysis of update issues.
+      </p>
+      <p><strong>Skills:</strong> AWS IoT Core, AWS CloudWatch, Python, Boto3, OTA Firmware Updates, Excel, Power BI, pandas, Throttling Control, CSV/JSON Parsing, Device Management, Real-Time Diagnosis</p>
+    </div>
 
-  <div class="project">
-    <h3>IoT Analytics Dashboards – Simulated Device Monitoring</h3>
-    <p>
-      Designed a cloud-based dashboards to monitor and analyze smart meter metrics such as voltage, sessions frequency, and cosnumption trends. Built ETL pipelines to process JSON device data using <strong>AWS Lambda</strong>, store it in <strong>S3</strong>, and query it using <strong>Athena</strong>.
-    </p>
-    <p>
-      Leveraged <strong>Amazon QuickSight</strong> for visualization, enabling stakeholders to track performance KPIs, identify abnormal behaviors, and generate insights. Conducted analysis on <strong>connectivity patterns</strong>, detected anomalies, and proactively flagged potential device issues before customers reported them improving responsiveness and reliability.
-    </p>
-    <p><strong>Skills:</strong> AWS Lambda, S3, Athena, QuickSight, SQL, IoT Analytics, ETL Pipelines, Anomaly Detection, Connectivity Analysis, Proactive Diagnostics, JSON Handling, Serverless Architecture</p>
-  </div>
+    <div class="project">
+      <h3>IoT Analytics Dashboards – Simulated Device Monitoring</h3>
+      <p>
+        Designed a cloud-based dashboard to monitor and analyze smart meter metrics such as voltage, sessions frequency, and consumption trends. Built ETL pipelines to process JSON device data using <strong>AWS Lambda</strong>, store it in <strong>S3</strong>, and query it using <strong>Athena</strong>.
+      </p>
+      <p>
+        Leveraged <strong>Amazon QuickSight</strong> for visualization, enabling stakeholders to track performance KPIs, identify abnormal behaviors, and generate insights. Conducted analysis on <strong>connectivity patterns</strong>, detected anomalies, and proactively flagged potential device issues before customers reported them, improving responsiveness and reliability.
+      </p>
+      <p><strong>Skills:</strong> AWS Lambda, S3, Athena, QuickSight, SQL, IoT Analytics, ETL Pipelines, Anomaly Detection, Connectivity Analysis, Proactive Diagnostics, JSON Handling, Serverless Architecture</p>
+    </div>
 
-  <div class="project">
-    <h3>Smart Device Firmware Testing Automation</h3>
-    <p>
-      Developed automated test cases for validating new firmware releases on smart metering devices. Scripts simulated real-world scenarios and verified core functionality post-upgrade. Reduced manual QA workload by 70% and improved firmware stability through structured logging and rapid diagnostics.
-    </p>
-    <p><strong>Skills:</strong> Python, Firmware QA, Automated Testing, Device Simulation, Git, Logging, Regression Testing</p>
-  </div>
+    <div class="project">
+      <h3>Smart Device Firmware Testing Automation</h3>
+      <p>
+        Developed automated test cases for validating new firmware releases on smart metering devices. Scripts simulated real-world scenarios and verified core functionality post-upgrade. Reduced manual QA workload by 70% and improved firmware stability through structured logging and rapid diagnostics.
+      </p>
+      <p><strong>Skills:</strong> Python, Firmware QA, Automated Testing, Device Simulation, Git, Logging, Regression Testing</p>
+    </div>
 
-  <div class="project">
-    <h3>Professional Data Portfolio Website</h3>
-    <p>
-      Created a responsive, mobile-friendly website using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Jekyll</strong>, hosted on <strong>GitHub Pages</strong>. Organized to showcase career experience, projects, and skills for data and IoT-related roles.
-    </p>
-    <p><strong>Skills:</strong> HTML5, CSS3, GitHub Pages, Jekyll, UI Design, Static Website Development</p>
-  </div>
-</section>
-
+    <div class="project">
+      <h3>Professional Data Portfolio Website</h3>
+      <p>
+        Created a responsive, mobile-friendly website using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Jekyll</strong>, hosted on <strong>GitHub Pages</strong>. Organized to showcase career experience, projects, and skills for data and IoT-related roles.
+      </p>
+      <p><strong>Skills:</strong> HTML5, CSS3, GitHub Pages, Jekyll, UI Design, Static Website Development</p>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
@@ -124,4 +134,5 @@
   </footer>
 
 </body>
+
 </html>
