@@ -21,11 +21,11 @@ body {
   padding: 20px;
 }
 
-.navbar .logo {
+/* .navbar .logo {
   font-size: 1.8rem;
   color: white;
   font-weight: 700;
-}
+} */
 
 .navbar ul {
   display: flex;
