@@ -18,27 +18,27 @@ body {
 
 /* Light and Dark Mode Variables */
 :root {
-  --bg-color: #f5f8fd;
-  --text-color: #1a1a1a;
-  --accent-color: #3b5f8a;
-  --section-bg: #e3ecf7;
-  --nav-bg: #cddbf0;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007acc;
+  --section-bg: #f0f4f8;
+  --nav-bg: #007acc;
   --card-bg: #ffffff;
-  --border-color: #c3cfe4;
+  --border-color: #d1d9e6;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #1c2a3a;
-    --text-color: #f0f0f0;
-    --accent-color: #4ea8de;
-    --section-bg: #2b2430;
-    --nav-bg: #1c2a3a;
-    --card-bg: #3e5064;
-    --border-color: #333333;
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #007acc;
+    --section-bg: #1e1e1e;
+    --nav-bg: #007acc;
+    --card-bg: #2c2c2c;
+    --border-color: #444444;
   }
 }
+
 
 /* Navbar */
 .navbar {
