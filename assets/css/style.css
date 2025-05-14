@@ -162,20 +162,19 @@ footer {
     display: block;
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-  }
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e5e8ec;
+  padding: 1rem 0;
+}
 
-  .nav-links.show {
-    display: flex;
-    background-color: #e5e8ec;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    left: 0;
-    padding: 1rem;
-  }
+.nav-links.show {
+  display: flex;
+  position: relative;
+}
+
 
   .nav-links a {
     margin: 0.5rem 0;
