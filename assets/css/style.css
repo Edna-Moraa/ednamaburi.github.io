@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f5f1e6;
+  background-color: #f2f4f7;
   color: #2e2e2e;
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: #8c6f4d;
+  color: #336699;
 }
 
 a:hover {
@@ -18,7 +18,7 @@ a:hover {
 
 /* Navbar */
 .navbar {
-  background-color: #f0e9dc;
+  background-color: #e5e8ec;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .nav-links a {
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: #8c6f4d;
+  color: #336699;
 }
 
 .menu-toggle {
@@ -48,7 +48,7 @@ a:hover {
 
 /* Intro Section */
 .intro-section {
-  background-color: #fdfbf7;
+  background-color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -66,7 +66,7 @@ a:hover {
   width: 180px;
   border-radius: 50%;
   margin: 1rem;
-  box-shadow: 0 4px 10px rgba(140, 111, 77, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro-text h1 {
@@ -76,7 +76,7 @@ a:hover {
 
 .intro-text h2 {
   font-size: 1.4rem;
-  color: #8c6f4d;
+  color: #336699;
   margin-bottom: 1rem;
 }
 
@@ -89,45 +89,45 @@ a:hover {
 
 section h2 {
   font-size: 2rem;
-  color: #8c6f4d;
+  color: #336699;
   margin-bottom: 1rem;
 }
 
 .skills span {
   display: block;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #d6cfc4;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Projects */
 .project {
   background-color: #ffffff;
-  border: 1px solid #d6cfc4;
+  border: 1px solid #d1d5da;
   border-radius: 6px;
   padding: 1.5rem;
   margin: 1.5rem 0;
-  box-shadow: 0 2px 6px rgba(140, 111, 77, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .project h3 {
-  color: #8c6f4d;
+  color: #336699;
   margin-top: 0;
 }
 
 /* Contact */
 #contact {
-  background-color: #f0e9dc;
+  background-color: #e5e8ec;
   padding: 3rem 2rem;
   text-align: center;
 }
 
 #contact a {
-  color: #8c6f4d;
+  color: #336699;
 }
 
 /* Footer */
 footer {
-  background-color: #d6cfc4;
+  background-color: #d1d5da;
   color: #2e2e2e;
   text-align: center;
   padding: 1rem;
@@ -139,7 +139,7 @@ footer {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background-color: #8c6f4d;
+  background-color: #336699;
   color: #fff;
   border: none;
   padding: 0.7rem 1rem;
@@ -149,7 +149,7 @@ footer {
 }
 
 #backToTop:hover {
-  background-color: #705437;
+  background-color: #254c75;
 }
 
 /* Responsive */
@@ -169,7 +169,7 @@ footer {
 
   .nav-links.show {
     display: flex;
-    background-color: #f0e9dc;
+    background-color: #e5e8ec;
     position: absolute;
     top: 60px;
     right: 0;
