@@ -18,13 +18,13 @@ body {
 
 /* Light and Dark Mode Variables */
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #bfd2ee;
   --text-color: #1a1a1a;
   --accent-color: #1e90ff;
   --section-bg: #f9f9f9;
   --nav-bg: #ffffff;
   --card-bg: #ffffff;
-  --border-color: #e0e0e0;
+  --border-color: #dcdfe3;
 }
 
 @media (prefers-color-scheme: dark) {
