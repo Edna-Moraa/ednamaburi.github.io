@@ -16,55 +16,39 @@ body {
   color: #333;
 }
 
-/* Navbar */
-header {
-  background-color: #2c3e50; /* Match intro theme color */
-  padding: 10px 0; /* Reduced padding to fit the content */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate from the content */
-}
-
+/* Mobile Navbar */
 .mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Reduce space between nav items */
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #2c3e50;
   text-decoration: none;
-  color: #ecf0f1; /* Light color to match intro text */
-  padding: 10px 15px;
-  font-size: 1rem; /* Larger text size for readability */
-  text-transform: uppercase; /* All caps for a uniform look */
+  padding: 8px 0;
+  border-radius: 20px;
+  margin: 0 4px;
+  background-color: #ecf0f1;
   transition: background 0.3s;
 }
 
-.mobile-nav a:hover {
-  background-color: #3498db; /* Sky blue on hover */
-  border-radius: 8px;
+.mobile-nav a:hover,
+.mobile-nav a:focus {
+  background-color: #d0d7de;
+  font-weight: bold;
 }
-
-/* Navbar items visible (desktop) */
-@media (min-width: 768px) {
-  .mobile-nav {
-    justify-content: flex-start; /* Align items to the left on desktop */
-    padding-left: 40px;
-  }
-  .mobile-nav a {
-    margin-right: 20px; /* Space between links */
-  }
-  .mobile-nav a:hover {
-    background-color: #3498db; /* Sky blue on hover */
-  }
-}
-
-
-/* Add margin-top to the first section to prevent being hidden under the navbar */
-.intro-section {
-  margin-top: 60px;
-}
-
-
 
 /* Intro Section */
 .intro-section {
@@ -254,6 +238,9 @@ footer p {
     padding: 30px 15px;
   }
 
+  .mobile-nav {
+    display: none;
+  }
 
   .intro-content {
     flex-direction: column;
