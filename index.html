@@ -131,7 +131,7 @@
 
   <!-- JS -->
   <script>
-     document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
     const navItems = document.querySelectorAll(".nav-links a");
@@ -139,7 +139,15 @@
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("show");
           });
+          navItems.forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("show");
+        }
+      });
+    });
   });
+
 
     window.onscroll = function () {
       const btn = document.getElementById("backToTop");
