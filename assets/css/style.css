@@ -17,79 +17,47 @@ body {
 }
 
 /* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #1e1e2f; /* Darker theme */
-  z-index: 1000;
-  padding: 0.5rem 0; /* Reduced height */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease;
+header {
+  background-color: #2c3e50; /* Match intro theme color */
+  padding: 10px 0; /* Reduced padding to fit the content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate from the content */
 }
 
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 16px;
+.mobile-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px; /* Reduce space between nav items */
 }
 
-/* .logo {
-  color: #ffca28; /* Bright amber to match your theme */
-  /* font-weight: bold;
-  font-size: 1.3rem;
-  font-family: 'Inter', sans-serif;
-} */ 
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: #eeeeee;
+.mobile-nav a {
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #ecf0f1; /* Light color to match intro text */
+  padding: 10px 15px;
+  font-size: 1rem; /* Larger text size for readability */
+  text-transform: uppercase; /* All caps for a uniform look */
+  transition: background 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: #ffca28;
+.mobile-nav a:hover {
+  background-color: #3498db; /* Sky blue on hover */
+  border-radius: 8px;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: #eeeeee;
-  cursor: pointer;
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 55px;
-    right: 16px;
-    background: #2a2a3c;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 8px;
-    display: none;
+/* Navbar items visible (desktop) */
+@media (min-width: 768px) {
+  .mobile-nav {
+    justify-content: flex-start; /* Align items to the left on desktop */
+    padding-left: 40px;
   }
-
-  .nav-links.show {
-    display: flex;
+  .mobile-nav a {
+    margin-right: 20px; /* Space between links */
   }
-
-  .hamburger {
-    display: block;
+  .mobile-nav a:hover {
+    background-color: #3498db; /* Sky blue on hover */
   }
 }
+
 
 /* Add margin-top to the first section to prevent being hidden under the navbar */
 .intro-section {
