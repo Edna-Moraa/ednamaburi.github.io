@@ -16,39 +16,41 @@ body {
   color: #333;
 }
 
-/* Navbar Basics */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #121212;
+  background-color: #1e1e2f; /* Darker theme */
   z-index: 1000;
-  padding: 0.8rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  padding: 0.5rem 0; /* Reduced height */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
 }
 
 .navbar-container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  color: #ff9800;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+/* .logo {
+  color: #ffca28; /* Bright amber to match your theme */
+  /* font-weight: bold;
+  font-size: 1.3rem;
+  font-family: 'Inter', sans-serif;
+} */ 
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #eeeeee;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -56,28 +58,28 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #ff9800;
+  color: #ffca28;
 }
 
-/* Hamburger Menu (Mobile) */
+/* Hamburger Menu */
 .hamburger {
   display: none;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 1.8rem;
+  color: #eeeeee;
   cursor: pointer;
 }
 
-/* Responsive: Mobile Menu */
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #1e1e1e;
+    top: 55px;
+    right: 16px;
+    background: #2a2a3c;
     flex-direction: column;
     padding: 1rem;
-    display: none;
     border-radius: 8px;
+    display: none;
   }
 
   .nav-links.show {
@@ -89,10 +91,11 @@ body {
   }
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
+/* Add margin-top to the first section to prevent being hidden under the navbar */
+.intro-section {
+  margin-top: 60px;
 }
+
 
 
 /* Intro Section */
