@@ -131,10 +131,14 @@
 
   <!-- JS -->
   <script>
-    function toggleMenu() {
-      const links = document.getElementById("navLinks");
-      links.classList.toggle("show");
-    }
+     document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+          });
+  });
 
     window.onscroll = function () {
       const btn = document.getElementById("backToTop");
