@@ -18,10 +18,10 @@ body {
 
 /* Light and Dark Mode Variables */
 :root {
-  --bg-color: #bfd2ee;
+  --bg-color: #d3e1f5;
   --text-color: #1a1a1a;
-  --accent-color: #1e90ff;
-  --section-bg: #f9f9f9;
+  --accent-color: #010102;
+  --section-bg: #b0c4e4;
   --nav-bg: #ffffff;
   --card-bg: #ffffff;
   --border-color: #dcdfe3;
@@ -29,12 +29,12 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #121212;
+    --bg-color: #1c2a3a;
     --text-color: #f0f0f0;
     --accent-color: #4ea8de;
-    --section-bg: #1e1e1e;
-    --nav-bg: #1a1a1a;
-    --card-bg: #252525;
+    --section-bg: #2b2430;
+    --nav-bg: #1c2a3a;
+    --card-bg: #3e5064;
     --border-color: #333333;
   }
 }
